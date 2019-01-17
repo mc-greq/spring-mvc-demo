@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +7,7 @@
 
 <hr>
 
-<a href="/showForm">Hello World form</a>
+<a href="${pageContext.request.contextPath}/showForm">Hello World form</a>
 
 </body>
 
