@@ -1,8 +1,10 @@
 package com.springmvc;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 @Component
 public class Student {
@@ -11,17 +13,18 @@ public class Student {
     private String lastName;
     private String country;
 
-    private LinkedHashMap<String, String> countryOptions;
+//    @Value("#{countryOptions}")
+//    private Map<String, String> countryOptions;
 
     public Student() {
         // populate country options: used ISO country code
-        countryOptions = new LinkedHashMap<>();
-        countryOptions.put("AT", "Austria");
-        countryOptions.put("DE", "Germany");
-        countryOptions.put("PL", "Poland");
-        countryOptions.put("UK", "United Kingdom");
-        countryOptions.put("FR", "France");
-        countryOptions.put("US", "United States of America");
+//        countryOptions = new LinkedHashMap<>();
+//        countryOptions.put("AT", "Austria");
+//        countryOptions.put("DE", "Germany");
+//        countryOptions.put("PL", "Poland");
+//        countryOptions.put("UK", "United Kingdom");
+//        countryOptions.put("FR", "France");
+//        countryOptions.put("US", "United States of America");
     }
 
     public String getCountry() {
@@ -48,8 +51,11 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public LinkedHashMap<String, String> getCountryOptions() {
-        return countryOptions;
-    }
-
+//    public Map<String, String> getCountryOptions() {
+//        return countryOptions;
+//    }
+//
+//    public void setCountryOptions(Map<String, String> countryOptions) {
+//        this.countryOptions = countryOptions;
+//    }
 }
