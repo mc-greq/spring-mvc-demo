@@ -7,7 +7,11 @@
 
 <hr>
 
-<a href="${pageContext.request.contextPath}/hello/showForm">Hello World form</a>
+<a href="${pageContext.request.contextPath}/hello/showForm">Hello World Form</a>
+
+<br><br>
+
+<a href="${pageContext.request.contextPath}/student/showForm">Student Registration Form</a>
 
 </body>
 
