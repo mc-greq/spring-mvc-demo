@@ -1,6 +1,5 @@
 package com.springmvc;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.LinkedHashMap;
@@ -12,9 +11,9 @@ public class Student {
     private String firstName;
     private String lastName;
     private String country;
+    private String favouriteLanguage;
 
-//    @Value("#{countryOptions}")
-//    private Map<String, String> countryOptions;
+//    private LinkedHashMap<String, String> countryOptions;
 
     public Student() {
         // populate country options: used ISO country code
@@ -51,11 +50,19 @@ public class Student {
         this.lastName = lastName;
     }
 
-//    public Map<String, String> getCountryOptions() {
+    public String getFavouriteLanguage() {
+        return favouriteLanguage;
+    }
+
+    public void setFavouriteLanguage(String favouriteLanguage) {
+        this.favouriteLanguage = favouriteLanguage;
+    }
+
+    //    public Map<String, String> getCountryOptions() {
 //        return countryOptions;
 //    }
 //
-//    public void setCountryOptions(Map<String, String> countryOptions) {
+//    public void setCountryOptions(LinkedHashMap<String, String> countryOptions) {
 //        this.countryOptions = countryOptions;
 //    }
 }
