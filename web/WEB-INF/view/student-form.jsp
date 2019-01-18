@@ -32,6 +32,7 @@
 
         <br><br>
 
+        <!-- Radio buttons with set values
         Favourite Language:
         <br>
         Java: <form:radiobutton path="favouriteLanguage" value="Java"/>
@@ -39,6 +40,13 @@
         PHP: <form:radiobutton path="favouriteLanguage" value="PHP"/>
         Ruby: <form:radiobutton path="favouriteLanguage" value="Ruby"/>
 
+        <br><br>
+        -->
+
+        <!-- Radio buttons with data from the Student class -->
+        Favourite Language:
+        <br>
+        <form:radiobuttons path="favouriteLanguage" items="${student.favouriteLanguageMap}"/>
         <br><br>
 
         <input type="submit" value="Submit"/>
