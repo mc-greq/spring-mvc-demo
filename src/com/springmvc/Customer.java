@@ -1,5 +1,7 @@
 package com.springmvc;
 
+import com.springmvc.validation.CourseCode;
+
 import javax.validation.constraints.*;
 
 public class Customer {
@@ -17,6 +19,17 @@ public class Customer {
 
     @Pattern(regexp = "^[0-9]{2}-[0-9]{3}", message = "only 5 digits with \"-\" after first 2")
     private String postalCode;
+
+    @CourseCode(value = "DOO", message = "must start with DOO")
+    private String courseCode;
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
 
     public String getFirstName() {
         return firstName;
