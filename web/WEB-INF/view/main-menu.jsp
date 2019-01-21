@@ -13,6 +13,10 @@
 
 <a href="${pageContext.request.contextPath}/student/showForm">Student Registration Form</a>
 
+<br><br>
+
+<a href="${pageContext.request.contextPath}/customer/showForm">Customer Registration Form</a>
+
 </body>
 
 </html>
